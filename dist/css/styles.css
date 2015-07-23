@@ -1,0 +1,78 @@
+/**/
+
+
+a {
+  word-wrap: break-word;
+}
+
+.badgeImages {
+  display: inline-block;
+  margin: 2px; 
+}
+
+.pointsLessons h3, .pointsLessons2 h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: none;
+  font-size: 26px
+}
+
+#badge-section {
+  text-align: center;
+}
+
+.badges li, .badges2 li {
+  width: 12%;
+}
+
+.badges li img, .badges2 li img  {
+  width: 100%;
+}
+
+.badges2, .badges {
+  text-align:center;
+}
+
+.insignia h3 {
+  margin-bottom: 16px;
+  text-align: center;
+  text-transform: none;
+  font-size: 26px;
+  margin-top: 28px;
+}
+
+.tooltip {
+  display:none;
+  position:absolute;
+  border:none;
+  background-color:#161616;
+  border-radius:5px;
+  padding-right:10px;
+  padding-left:10px;
+  color:#fff;
+  font-size:12px Arial;
+}
+
+.tooltip1 {
+  display:none;
+  position:absolute;
+  border:none;
+  background-color:#161616;
+  border-radius:5px;
+  padding-right:10px;
+  padding-left:10px;
+  color:#fff;
+  font-size:12px Arial;
+}
+
+span.tooltip {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p.tooltip1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
