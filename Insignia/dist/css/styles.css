@@ -1,0 +1,50 @@
+/**/
+
+
+a {
+  word-wrap: break-word;
+}
+
+.badgeImages {
+  display: inline-block;
+  margin: 2px; 
+}
+
+#coding-form h2 {
+  font-size: 1.5em;
+  line-height: 1.3;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pointsLessons h3, .pointsLessons2 h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: none;
+  font-size: 26px
+}
+
+#badge-section {
+  text-align: center;
+}
+
+.badges li, .badges2 li {
+  width: 12%;
+}
+
+.badges li img, .badges2 li img  {
+  width: 100%;
+}
+
+.badges2, .badges {
+  text-align:center;
+}
+
+.insignia h3 {
+  margin-bottom: 16px;
+  text-align: center;
+  text-transform: none;
+  font-size: 26px;
+  margin-top: 28px;
+}
+
