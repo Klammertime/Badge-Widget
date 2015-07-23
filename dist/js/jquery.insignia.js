@@ -68,8 +68,6 @@
         });
     }
 
-
-
     function getBadges(usernameTreehouse, element) {
         $.ajax({
             url: "http://teamtreehouse.com/" + usernameTreehouse + ".json",
@@ -117,7 +115,5 @@
             }
         });
     }
-
-
 
 }(jQuery));
