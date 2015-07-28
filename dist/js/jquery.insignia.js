@@ -24,17 +24,15 @@
 
     function getBadges2(usernameCodeschool, element) {
         $.ajax({
-            url: "https://www.codeschool.com/users/" + usernameCodeschool + ".json",
+            url: "https://codeschool.com/users/" + usernameCodeschool + ".json",
             type: "GET",
             crossDomain: true,
             dataType: "jsonp",
             async: true,
             success: function(dataBack) {
-                console.log(dataBack);
                 $(element).append("<h3>I have taken " + dataBack.badges.length + " lessons and scored " + dataBack.user.total_score +
                     " points at Codeschool!</h3><div class=\"badges\"></div>");
                 var badge = dataBack.courses.completed;
-                badge = badge.reverse();
                 badge.forEach(function(badge, i) {
                     if (i < 7) {
                         element.find(".badges").append("<li class=\"badgeImages\"> <img src='" + badge.badge + "' class=\"masterTooltip\" title='" + badge.title + "'/></li>");
@@ -78,14 +76,11 @@
             success: function(dataBack) {
                 var badges = dataBack.badges;
                 badges = badges.reverse();
-                console.log(badges);
                 $(element).append("<h3>I have taken " + badges.length + " lessons and scored " + dataBack.points.total +
                     " points at Treehouse!</h3><div class=\"badges2\"></div>");
                 badges.forEach(function(badge, i) {
                     if (i < 7) {
                         element.find(".badges2").append("<li class=\"badgeImages\"> <img src='" + badge.icon_url + "' class=\"masterTooltip1\" title='" + badge.courses[0].title + "'/></li>");
-                        console.log(badge.name);
-                        console.log(badge.courses[0].title);
                     }
                 });
                 // Tooltip 
