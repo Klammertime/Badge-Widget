@@ -6,8 +6,8 @@
         var insigniaList = $('.insignia');
         for(var i = 0; i < insigniaList.length; i++){
             var insigniaEntry = insigniaList[i];
-            $(insigniaEntry).insignia(insigniaEntry.dataset.codeschool, insigniaEntry.dataset.treehouse);  
-        } 
+            $(insigniaEntry).insignia(insigniaEntry.dataset.codeschool, insigniaEntry.dataset.treehouse);
+        }
     });
 
     $.fn.insignia = function(usernameTreehouse, usernameCodeschool) {
@@ -39,7 +39,7 @@
                     }
                 });
 
-                // Tooltip 
+                // Tooltip
                 $('.masterTooltip').hover(function(){
                     // Hover over code
                     var title = $(this).attr('title');
@@ -68,7 +68,7 @@
 
     function getBadges(usernameTreehouse, element) {
         $.ajax({
-            url: "http://teamtreehouse.com/" + usernameTreehouse + ".json",
+            url: "https://teamtreehouse.com/" + usernameTreehouse + ".json",
             type: "GET",
             crossDomain: true,
             dataType: "json",
@@ -83,7 +83,7 @@
                         element.find(".badges2").append("<li class=\"badgeImages\"> <img src='" + badge.icon_url + "' class=\"masterTooltip1\" title='" + badge.courses[0].title + "'/></li>");
                     }
                 });
-                // Tooltip 
+                // Tooltip
                 $('.masterTooltip1').hover(function(){
                     // Hover over code
                     var title = $(this).attr('title');
