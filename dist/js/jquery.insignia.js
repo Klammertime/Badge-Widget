@@ -1,10 +1,9 @@
-
-
-;(function($) {
+;
+(function($) {
 
     $(document).ready(function() {
         var insigniaList = $('.insignia');
-        for(var i = 0; i < insigniaList.length; i++){
+        for (var i = 0; i < insigniaList.length; i++) {
             var insigniaEntry = insigniaList[i];
             $(insigniaEntry).insignia(insigniaEntry.dataset.codeschool, insigniaEntry.dataset.treehouse);
         }
@@ -20,7 +19,7 @@
             getBadges(usernameTreehouse, this);
         }
 
-    }
+    };
 
     function getBadges2(usernameCodeschool, element) {
         $.ajax({
@@ -40,14 +39,14 @@
                 });
 
                 // Tooltip
-                $('.masterTooltip').hover(function(){
+                $('.masterTooltip').hover(function() {
                     // Hover over code
                     var title = $(this).attr('title');
                     $(this).data('tipText', title).removeAttr('title');
                     $('<span class="tooltip"></span>')
-                    .text(title)
-                    .appendTo(element)
-                    .fadeIn('slow');
+                        .text(title)
+                        .appendTo(element)
+                        .fadeIn('slow');
                 }, function() {
                     // Hover out code
                     $(this).attr('title', $(this).data('tipText'));
@@ -56,7 +55,10 @@
                     var mousex = e.pageX + 20; //Get X coordinates
                     var mousey = e.pageY + 10; //Get Y coordinates
                     $('.tooltip')
-                    .css({ top: mousey, left: mousex })
+                        .css({
+                            top: mousey,
+                            left: mousex
+                        });
                 });
             },
             error: function(dataBack) {
@@ -84,14 +86,14 @@
                     }
                 });
                 // Tooltip
-                $('.masterTooltip1').hover(function(){
+                $('.masterTooltip1').hover(function() {
                     // Hover over code
                     var title = $(this).attr('title');
                     $(this).data('tipText', title).removeAttr('title');
                     $('<p class="tooltip1"></p>')
-                    .text(title)
-                    .appendTo('body')
-                    .fadeIn('slow');
+                        .text(title)
+                        .appendTo('body')
+                        .fadeIn('slow');
                 }, function() {
                     // Hover out code
                     $(this).attr('title', $(this).data('tipText'));
@@ -100,9 +102,11 @@
                     var mousex = e.pageX + 20; //Get X coordinates
                     var mousey = e.pageY + 10; //Get Y coordinates
                     $('.tooltip1')
-                    .css({ top: mousey, left: mousex })
+                        .css({
+                            top: mousey,
+                            left: mousex
+                        });
                 });
-
             },
             error: function(dataBack) {
                 console.log("something went wrong.");
