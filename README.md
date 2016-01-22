@@ -1,9 +1,12 @@
 # Project Summary 
 
 **Insignia jQuery Plugin**
- I created this project from scratch using jQuery and responsive web design to let people show off their Treehouse and CodeSchool badges on their site.
+ I created this project from scratch to help users show off their online learning badges, specifically from [Treehouse](https://teamtreehouse.com/home)and Code School](https://www.codeschool.com/).
+ 
+ 
 
-I use the plugin on my site under my bio here: http://audreyklammer.com/about.
+
+I use the plugin on my site under my bio here: http://audreyklammer.com/about.html
 
 I simply include this tag:
 
@@ -12,20 +15,18 @@ I simply include this tag:
 
 ## Usage Instructions
 
-Download the dist file. 
+1. Download the dist file. 
 
-I've included an index.html file with my username so you can see how it might look. 
+2. An index.html file is provided with my username so you can see how it might look. 
 
-Adjust the CSS based on the styles on your site.
+3. Adjust the CSS based on the styles on your site. Include the styles.css code and jquery.insignia.js code either in the head or concatenated with your other files based on your preferred method.
 
-On the page where you'd your badges to appear, include this code, replacing your CodeSchool and Treehouse username in place of mine:
-
-`<div class="insignia" data-codeschool="audreyklammer" data-treehouse="audreyklammer"></div>`
-
-in other words, replace "yourUsername" with yours:
+4. On the page where you'd your badges to appear, include this code, replacing "yourUsername" with your Code School and Treehouse username:
 
 `<div class="insignia" data-codeschool="yourUsername" data-treehouse="yourUsername"></div>`
 
-Include the styles.css code and jquery.insignia.js code either in the head or concatenated with your other files. 
+
+
+
 
 

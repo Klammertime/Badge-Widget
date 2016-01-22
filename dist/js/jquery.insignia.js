@@ -30,7 +30,7 @@
             async: true,
             success: function(dataBack) {
                 $(element).append("<h3>I have taken " + dataBack.badges.length + " lessons and scored " + dataBack.user.total_score +
-                    " points at Codeschool!</h3><div class=\"badges\"></div>");
+                    " points at Code School!</h3><div class=\"badges\"></div>");
                 var badge = dataBack.courses.completed;
                 badge.forEach(function(badge, i) {
                     if (i < 7) {
