@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
-
 a {
     word-wrap: break-word;
 }
@@ -8,6 +7,7 @@ a {
     display: inline-block;
     margin: 2px;
 }
+
 .badges li,
 .badges2 li {
     width: 12%;
@@ -26,23 +26,23 @@ a {
 }
 
 .insignia h3 {
+    font: normal 300 24px/150% 'Lato', Arial, sans-serif;
     margin-bottom: 20px;
     text-transform: none;
     color: #648880;
-    font: normal 300 24px/150% 'Lato', Arial, sans-serif;
 }
 
 .tooltip,
 .tooltip1 {
-    display: none;
+    font: normal 400 16px/130% 'Lato', Arial, sans-serif;
     position: absolute;
-    border: none;
-    background-color: #161616;
-    border-radius: 5px;
+    display: none;
     padding-right: 10px;
     padding-left: 10px;
     color: #fff;
-    font: normal 400 16px/130% 'Lato', Arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: #161616;
 }
 
 span.tooltip,
