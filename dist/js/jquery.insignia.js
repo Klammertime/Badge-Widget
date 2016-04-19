@@ -1,5 +1,6 @@
 (function($) {
     $(document).ready(function() {
+        var insigniaList;
         $.fn.insignia = function(usernameTreehouse, usernameCodeschool) {
             this.empty();
             if (usernameCodeschool) {
@@ -12,7 +13,8 @@
             return this;
         };
 
-        var insigniaList = $('.insignia');
+        insigniaList = $('.insignia');
+
         $.each(insigniaList, function(i, val) {
             var insigniaEntry = insigniaList[i];
             $(val).insignia(insigniaEntry.dataset.codeschool, insigniaEntry.dataset.treehouse);
@@ -36,16 +38,14 @@
                     });
 
                     $('.masterTooltip').hover(function() {
-                        // Hover over code
-                        var title = $(this).attr('title');
+                        var title = $(this).attr('title'); // When hover over tooltip
                         $(this).data('tipText', title).removeAttr('title');
                         $('<span class="tooltip"></span>')
                             .text(title)
                             .appendTo(element)
                             .fadeIn('slow');
                     }, function() {
-                        // Hover out code
-                        $(this).attr('title', $(this).data('tipText'));
+                        $(this).attr('title', $(this).data('tipText')); // Hover out
                         $('.tooltip').remove();
                     }).mousemove(function(e) {
                         var mousex = e.pageX + 20; //Get X coordinates
@@ -82,7 +82,6 @@
                     });
 
                     $('.masterTooltip1').hover(function() {
-                        // Hover over code
                         var title = $(this).attr('title');
                         $(this).data('tipText', title).removeAttr('title');
                         $('<p class="tooltip1"></p>')
@@ -90,7 +89,6 @@
                             .appendTo('body')
                             .fadeIn('slow');
                     }, function() {
-                        // Hover out code
                         $(this).attr('title', $(this).data('tipText'));
                         $('.tooltip1').remove();
                     }).mousemove(function(e) {
