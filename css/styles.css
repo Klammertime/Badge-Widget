@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+a {
+    word-wrap: break-word;
+}
+
+.badgeImages {
+    display: inline-block;
+    margin: 2px;
+}
+
+.badges li,
+.badges2 li {
+    width: 12%;
+}
+
+.badges li img,
+.badges2 li img {
+    width: 100%;
+}
+
+#badge-section,
+.badges2,
+.badges,
+.insignia h3 {
+    text-align: center;
+}
+
+.insignia h3 {
+    font: normal 300 24px/150% 'Lato', Arial, sans-serif;
+    margin-bottom: 20px;
+    text-transform: none;
+    color: #648880;
+}
+
+.tooltip,
+.tooltip1 {
+    font: normal 400 16px/130% 'Lato', Arial, sans-serif;
+    position: absolute;
+    display: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #161616;
+}
+
+span.tooltip,
+p.tooltip1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "insignia",
+  "version": "1.0.0",
+  "description": "Coding badge widget",
+  "main": "index.js",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-gh-pages": "^0.5.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klammertime/Insignia"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Klammertime/Insignia/issues"
+  },
+  "homepage": "https://github.com/Klammertime/Insignia#readme"
+}
