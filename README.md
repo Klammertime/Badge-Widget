@@ -2,7 +2,7 @@
 
 **jQuery Plugin: Display Your Coding Badges**
 
-Have several coding tutorial badges you've earned from [Code School](https://www.codeschool.com/) and [Treehouse](https://teamtreehouse.com/home)that you'd like to display on your site? This simple jQuery plugin makes that possible, whether your site is hand-coded, or created using a popular CMS such as WordPress or Drupal. 
+Have several coding tutorial badges you've earned from [Code School](https://www.codeschool.com/) and [Treehouse](https://teamtreehouse.com/home) that you'd like to display on your site? This simple jQuery plugin makes that possible, whether your site is hand-coded, or created using a popular CMS such as WordPress or Drupal. 
 
 Demo
 ----
@@ -25,7 +25,7 @@ a basic example of the badges using my usernames
 ```<div class="insignia" data-codeschool="yourUsername" data-treehouse="yourUsername"></div>```
  
 ##Technologies Used
-jQuery, [HTML5 data-* attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes)
+jQuery, [HTML5 data-* attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes), AJAX
 
 
 

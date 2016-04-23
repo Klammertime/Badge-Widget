@@ -60,7 +60,7 @@
                     });
                 },
                 error: function(dataBack) {
-                    console.log('something went wrong.');
+                    console.log('Code School is not responding with data.');
                 }
             });
         }
@@ -105,7 +105,7 @@
                     });
                 },
                 error: function(dataBack) {
-                    console.log('something went wrong.');
+                    console.log('Treehouse is not responding with data.');
                 }
             });
         }
