@@ -28,17 +28,19 @@
                 dataType: 'jsonp',
                 async: true,
                 success: function(dataBack) {
-                    $(element).append('<h3>I have taken ' + dataBack.badges.length + ' lessons and scored ' + dataBack.user.total_score +
-                        ' points at Code School!</h3><div class="badges"></div>');
+                    $(element).append('<h3>I have taken ' + dataBack.badges.length + ' lessons and scored ' +
+                        dataBack.user.total_score + ' points at Code School!</h3><div class="badges"></div>');
                     var badge = dataBack.courses.completed;
                     badge.forEach(function(badge, i) {
                         if (i < 7) {
-                            element.find('.badges').append('<li class="badgeImages"> <img src="' + badge.badge + '" class="masterTooltip" title="' + badge.title + '"/></li>');
+                            element.find('.badges').append('<li class="badgeImages"> <img src="' +
+                                badge.badge + '" class="masterTooltip" title="' +
+                                badge.title + '"/></li>');
                         }
                     });
 
                     $('.masterTooltip').hover(function() {
-                        var title = $(this).attr('title'); // When hover over tooltip
+                        var title = $(this).attr('title');
                         $(this).data('tipText', title).removeAttr('title');
                         $('<span class="tooltip"></span>')
                             .text(title)
@@ -48,8 +50,8 @@
                         $(this).attr('title', $(this).data('tipText')); // Hover out
                         $('.tooltip').remove();
                     }).mousemove(function(e) {
-                        var mousex = e.pageX + 20; //Get X coordinates
-                        var mousey = e.pageY + 10; //Get Y coordinates
+                        var mousex = e.pageX + 20,
+                            mousey = e.pageY + 10;
                         $('.tooltip')
                             .css({
                                 top: mousey,
@@ -71,13 +73,14 @@
                 dataType: 'json',
                 async: true,
                 success: function(dataBack) {
-                    var badges = dataBack.badges;
-                    badges = badges.reverse();
-                    $(element).append('<h3>I have taken ' + badges.length + ' lessons and scored ' + dataBack.points.total +
-                        ' points at Treehouse!</h3><div class="badges2"></div>');
+                    var badges = dataBack.badges.reverse(); // Retrieve most recent badges, so reverse the array
+                    $(element).append('<h3>I have taken ' + badges.length + ' lessons and scored ' +
+                        dataBack.points.total + ' points at Treehouse!</h3><div class="badges2"></div>');
                     badges.forEach(function(badge, i) {
                         if (i < 7) {
-                            element.find('.badges2').append('<li class="badgeImages"> <img src="' + badge.icon_url + '" class="masterTooltip1" title="' + badge.courses[0].title + '"/></li>');
+                            element.find('.badges2').append('<li class="badgeImages"> <img src="' +
+                                badge.icon_url + '" class="masterTooltip1" title="' +
+                                badge.courses[0].title + '"/></li>');
                         }
                     });
 
@@ -92,8 +95,8 @@
                         $(this).attr('title', $(this).data('tipText'));
                         $('.tooltip1').remove();
                     }).mousemove(function(e) {
-                        var mousex = e.pageX + 20; //Get X coordinates
-                        var mousey = e.pageY + 10; //Get Y coordinates
+                        var mousex = e.pageX + 20,
+                            mousey = e.pageY + 10;
                         $('.tooltip1')
                             .css({
                                 top: mousey,
