@@ -29,7 +29,7 @@
                 async: true,
                 success: function(dataBack) {
                     $(element).append('<h3>I have taken ' + dataBack.badges.length + ' lessons and scored ' +
-                        dataBack.user.total_score + ' points at Code School!</h3><div class="badges"></div>');
+                        Number(dataBack.user.total_score).toLocaleString('en') + ' points at Code School!</h3><div class="badges"></div>');
                     var badge = dataBack.courses.completed;
                     badge.forEach(function(badge, i) {
                         if (i < 7) {
@@ -60,7 +60,7 @@
                     });
                 },
                 error: function(dataBack) {
-                    console.log('something went wrong.');
+                    console.log('Code School is not responding with data.');
                 }
             });
         }
@@ -75,7 +75,7 @@
                 success: function(dataBack) {
                     var badges = dataBack.badges.reverse(); // Retrieve most recent badges, so reverse the array
                     $(element).append('<h3>I have taken ' + badges.length + ' lessons and scored ' +
-                        dataBack.points.total + ' points at Treehouse!</h3><div class="badges2"></div>');
+                        Number(dataBack.points.total).toLocaleString('en') + ' points at Treehouse!</h3><div class="badges2"></div>');
                     badges.forEach(function(badge, i) {
                         if (i < 7) {
                             element.find('.badges2').append('<li class="badgeImages"> <img src="' +
@@ -105,7 +105,7 @@
                     });
                 },
                 error: function(dataBack) {
-                    console.log('something went wrong.');
+                    console.log('Treehouse is not responding with data.');
                 }
             });
         }
