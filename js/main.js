@@ -30,12 +30,13 @@
                 success: function(dataBack) {
                     $(element).append('<h3>I have taken ' + dataBack.badges.length + ' lessons and scored ' +
                         Number(dataBack.user.total_score).toLocaleString('en') + ' points at Code School!</h3><div class="badges"></div>');
-                    var badge = dataBack.courses.completed;
+                    var badge = dataBack.courses.completed.reverse();
+                    console.log("badge", badge);
                     badge.forEach(function(badge, i) {
                         if (i < 7) {
-                            element.find('.badges').append('<li class="badgeImages"> <img src="' +
+                            element.find('.badges').append('<li class="badgeImages"><a href="' + badge.url + '"><img src="' +
                                 badge.badge + '" class="masterTooltip" title="' +
-                                badge.title + '"/></li>');
+                                badge.title + '"/></img></li>');
                         }
                     });
 
@@ -74,13 +75,14 @@
                 async: true,
                 success: function(dataBack) {
                     var badges = dataBack.badges.reverse(); // Retrieve most recent badges, so reverse the array
+                    console.log("badges", badges);
                     $(element).append('<h3>I have taken ' + badges.length + ' lessons and scored ' +
                         Number(dataBack.points.total).toLocaleString('en') + ' points at Treehouse!</h3><div class="badges2"></div>');
                     badges.forEach(function(badge, i) {
                         if (i < 7) {
-                            element.find('.badges2').append('<li class="badgeImages"> <img src="' +
+                            element.find('.badges2').append('<li class="badgeImages"> <a href="' + badge.url + '"><img src="' +
                                 badge.icon_url + '" class="masterTooltip1" title="' +
-                                badge.courses[0].title + '"/></li>');
+                                badge.courses[0].title + '"/></img></li>');
                         }
                     });
 
