@@ -4,14 +4,16 @@
 
 Have several coding tutorial badges you've earned from [Treehouse](https://teamtreehouse.com/home) and [Code School](https://www.codeschool.com/) that you'd like to display on your site? This simple jQuery plugin makes that possible, whether your site is hand-coded, or created using a popular CMS such as WordPress or Drupal. 
 
-Usage
------
-Navigate to project hosted on github.com [**here**](http://klammertime.github.io/Insignia/)
-
-You can see an example of how it might look on my [about](http://audreyklammer.com/about.html) page.
+Demo
+----
+Navigate to the project hosted on github.com [**here**](http://klammertime.github.io/Insignia/)
 
 **OR**
 
+Navigate to Insignia on my personal[about](http://audreyklammer.com/about.html) page.
+
+Usage
+-----
 1. Clone this repository
 2. Navigate to your local copy of index.html through your web browser to see
 a basic example of the badges using my usernames
