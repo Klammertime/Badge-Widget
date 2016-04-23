@@ -1,7 +1,8 @@
 #Insignia
 
-**jQuery Plugin**: Display Your Coding Badges
-Have a bunch of online tutorial badges you'd like to display on your personal site? This simple jQuery plugin makes that possible, whether your site is hand-coded, WordPress or Drupal.
+**jQuery Plugin: Display Your Coding Badges**
+
+Have several coding tutorial badges you've earned from [Treehouse](https://teamtreehouse.com/home) and [Code School](https://www.codeschool.com/) that you'd like to display on your site? This simple jQuery plugin makes that possible, whether your site is hand-coded, or created using a popular CMS such as WordPress or Drupal. 
 
 Usage
 -----
@@ -19,14 +20,10 @@ a basic example of the badges using my usernames
 5. Include the CSS/main.css and JS/main.js files in your project
 6. Include the following div tag or a tag you specify (section etc.), replacing "yourUsername" with your Code School and Treehouse usernames:
 
-```<div class="insignia" data-codeschool="yourUsername" data-treehouse="yourUsername"></div>```
-
-This plugin makes it easy to show off your online learning badges, specifically those you've earned from [Treehouse](https://teamtreehouse.com/home) and [Code School](https://www.codeschool.com/).
+    ```<div class="insignia" data-codeschool="yourUsername" data-treehouse="yourUsername"></div>```
  
 ##Technologies Used
-jQuery, HTML5 data-* attributes
-
-* HTML5 data-* attributes which "allow us to store extra information on standard, semantic HTML elements without other hacks such as classList, non-standard attributes, extra properties on DOM, or setUserData" according to [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes)
+jQuery, [HTML5 data-* attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes)
 
 
 
