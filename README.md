@@ -1,4 +1,4 @@
-#Insignia
+# Insignia
 
 **jQuery Plugin: Display Your Coding Badges**
 
@@ -24,7 +24,7 @@ a basic example of the badges using my usernames
 
 ```<div class="insignia" data-codeschool="yourUsername" data-treehouse="yourUsername"></div>```
  
-##Technologies Used
+## Technologies Used
 jQuery, [HTML5 data-* attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes), AJAX
 
 
